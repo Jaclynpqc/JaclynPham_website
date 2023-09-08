@@ -1,0 +1,55 @@
+
+## Software Engineering at Google
+
+#### Preface: Software Engineering Over Time
+
+##### Summary
+
+In the ever-changing industry, the term "programming" is no longer being refered solely as technical term, but rather the process from start to finish regarding this act of "writing code": building and maintaining the code over time. 
+
+<mark>Key insight: Software Engineering can been thought of as "programming integrated over time 
+</mark>
+
+There are ***03 questions and priciples*** software engineers should keep in mind:
+
+* Time and Change: How code will need to adapt over the length of its life
+* Scale and Growth: How an organization will need to adapt as it evolves
+* Trade-offs and Costs: How an organization makes decisions, based on the lessons of Time and Change and Scale and Growth
+
+Throughout this book, we will learn each of this principle in-depth. 
+
+##### Action Items
+***How topics covered in the reading can be implemented to the Chasten project***
+
+* We should plan ahead the approach to write our program in a timely manner: well-planned schedule, detailed scope of work, class and team goals
+* Strategies to keep track with changes: Because we have a large team of software engineers, there will be time of unexpected change. As we operate on a blame-free environment, we should work on the problem by assigning a group of people to work on fixing the problem in a timely manner. 
+* Trade-offs and Costs: We should decide which feature to build, keeping in mind the opportunity cost, technical cost, people cost. etc. 
+
+
+## The Fuzzing Book 
+
+#### Chapter 1: Introduction to Software Testing
+
+In the fast-paced world of software development, ensuring the functionality of your programs is immensely important. In this chapter, we'll delve into the fundamentals of software testing.
+
+##### What does Software Testing Mean?
+
+Sotware Testing is the process of evaluating a program to identify defects and issues. The purposes of software testing are:
+* Identifying and fixing bugs early in the process
+* Ensuring that the software meets the specified requirements, behaves as expected
+* Reducing the risk of software failures in deployment.
+
+##### Testing Strategies
+
+* **Utilizing 'print()' Statement:** One of the most straightforward yet effective debugging techniques is the 'print' statements. This technique involves strategically printing relevant information that provides information into whether the program is running correctly. 
+* **Automatic Test Execution and 'assert()' Statement:** By crafting comprehensive test suites with assert statements, you can systematically check if your code behaves correcly.
+* **Rounding Error: Introducing Epsilon:** Some programs make exact comparisons challengeing by having float type. To tackle this issue, the concept of "epsilon" is employed, determining whether two floating-point values are considered equal. Developers often check if the absolute difference between the values of floating-point numbers is less than or equal to epsilon. 
+* **Generating Tests: Apply Your Test to Thousands of Inputs:** To increase confidence in your software's correctness (and also reduce the time and effort spend testing each input), consider generating tests with a wide range of inputs. 
+* **Integrating Checks:** For robust and reliable code, consider integrating checks directly into your functions. You can utilize Assertions to ensure that the inputs and outputs conform to expected behavior.
+
+##### Applications on Chasten
+
+It's a collaborative effort to ensure the software run correctly. After reading this chapter, here are some action items I suggest implementing:
+1. Avoid overconfidence in your code and acknowledge that things can go wrong.
+2. Rigorous Testing: To ensure the highest quality of your code, run as many tests as possible. 
+3. Collaborate and Seek Insights: Consult with Software Quality Assurance engineer and colleagues with diverse and creative perspectives. 

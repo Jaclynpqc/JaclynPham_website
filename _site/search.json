@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Jaclyn Pham",
+    "section": "",
+    "text": "In the ever-changing industry, the term “programming” is no longer being refered solely as technical term, but rather the process from start to finish regarding this act of “writing code”: building and maintaining the code over time.\nKey insight: Software Engineering can been thought of as “programming integrated over time \nThere are 03 questions and priciples software engineers should keep in mind:\n\nTime and Change: How code will need to adapt over the length of its life\nScale and Growth: How an organization will need to adapt as it evolves\nTrade-offs and Costs: How an organization makes decisions, based on the lessons of Time and Change and Scale and Growth\n\nThroughout this book, we will learn each of this principle in-depth.\n\n\n\nHow topics covered in the reading can be implemented to the Chasten project\n\nWe should plan ahead the approach to write our program in a timely manner: well-planned schedule, detailed scope of work, class and team goals\nStrategies to keep track with changes: Because we have a large team of software engineers, there will be time of unexpected change. As we operate on a blame-free environment, we should work on the problem by assigning a group of people to work on fixing the problem in a timely manner.\nTrade-offs and Costs: We should decide which feature to build, keeping in mind the opportunity cost, technical cost, people cost. etc."
+  },
+  {
+    "objectID": "blog.html#software-engineering-at-google",
+    "href": "blog.html#software-engineering-at-google",
+    "title": "Jaclyn Pham",
+    "section": "",
+    "text": "In the ever-changing industry, the term “programming” is no longer being refered solely as technical term, but rather the process from start to finish regarding this act of “writing code”: building and maintaining the code over time.\nKey insight: Software Engineering can been thought of as “programming integrated over time \nThere are 03 questions and priciples software engineers should keep in mind:\n\nTime and Change: How code will need to adapt over the length of its life\nScale and Growth: How an organization will need to adapt as it evolves\nTrade-offs and Costs: How an organization makes decisions, based on the lessons of Time and Change and Scale and Growth\n\nThroughout this book, we will learn each of this principle in-depth.\n\n\n\nHow topics covered in the reading can be implemented to the Chasten project\n\nWe should plan ahead the approach to write our program in a timely manner: well-planned schedule, detailed scope of work, class and team goals\nStrategies to keep track with changes: Because we have a large team of software engineers, there will be time of unexpected change. As we operate on a blame-free environment, we should work on the problem by assigning a group of people to work on fixing the problem in a timely manner.\nTrade-offs and Costs: We should decide which feature to build, keeping in mind the opportunity cost, technical cost, people cost. etc."
+  },
+  {
+    "objectID": "blog.html#the-fuzzing-book",
+    "href": "blog.html#the-fuzzing-book",
+    "title": "Jaclyn Pham",
+    "section": "The Fuzzing Book",
+    "text": "The Fuzzing Book\n\nChapter 1: Introduction to Software Testing\nIn the fast-paced world of software development, ensuring the functionality of your programs is immensely important. In this chapter, we’ll delve into the fundamentals of software testing.\n\nWhat does Software Testing Mean?\nSotware Testing is the process of evaluating a program to identify defects and issues. The purposes of software testing are: * Identifying and fixing bugs early in the process * Ensuring that the software meets the specified requirements, behaves as expected * Reducing the risk of software failures in deployment.\n\n\nTesting Strategies\n\nUtilizing ‘print()’ Statement: One of the most straightforward yet effective debugging techniques is the ‘print’ statements. This technique involves strategically printing relevant information that provides information into whether the program is running correctly.\nAutomatic Test Execution and ‘assert()’ Statement: By crafting comprehensive test suites with assert statements, you can systematically check if your code behaves correcly.\nRounding Error: Introducing Epsilon: Some programs make exact comparisons challengeing by having float type. To tackle this issue, the concept of “epsilon” is employed, determining whether two floating-point values are considered equal. Developers often check if the absolute difference between the values of floating-point numbers is less than or equal to epsilon.\nGenerating Tests: Apply Your Test to Thousands of Inputs: To increase confidence in your software’s correctness (and also reduce the time and effort spend testing each input), consider generating tests with a wide range of inputs.\nIntegrating Checks: For robust and reliable code, consider integrating checks directly into your functions. You can utilize Assertions to ensure that the inputs and outputs conform to expected behavior.\n\n\n\nApplications on Chasten\nIt’s a collaborative effort to ensure the software run correctly. After reading this chapter, here are some action items I suggest implementing: 1. Avoid overconfidence in your code and acknowledge that things can go wrong. 2. Rigorous Testing: To ensure the highest quality of your code, run as many tests as possible. 3. Collaborate and Seek Insights: Consult with Software Quality Assurance engineer and colleagues with diverse and creative perspectives."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the Author",
+    "section": "",
+    "text": "About the Author\nHello, my name is Jaclyn Pham, and I am looking forward to collaborating with everyone throughout the semester.\n\n\nMajor\nArt, Science and Innovation & Software Engineering"
+  }
+]
