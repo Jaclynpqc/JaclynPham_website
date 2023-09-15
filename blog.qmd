@@ -1,19 +1,20 @@
 
-## Software Engineering at Google
+# Software Engineering at Google
 
-#### Preface: Software Engineering Over Time
+<h2 style="color:orange"> Preface: Software Engineering Over Time </h2>
 
 ##### Summary
 
 In the ever-changing industry, the term "programming" is no longer being refered solely as technical term, but rather the process from start to finish regarding this act of "writing code": building and maintaining the code over time. 
 
-<mark>Key insight: Software Engineering can been thought of as "programming integrated over time 
-</mark>
+***Key insight***: Software Engineering can been thought of as "programming integrated over time"
+
 
 There are ***03 questions and priciples*** software engineers should keep in mind:
 
 * Time and Change: How code will need to adapt over the length of its life
-* Scale and Growth: How an organization will need to adapt as it evolves
+* Scale and Growth: How an organization will need to adap
+* t as it evolves
 * Trade-offs and Costs: How an organization makes decisions, based on the lessons of Time and Change and Scale and Growth
 
 Throughout this book, we will learn each of this principle in-depth. 
@@ -25,10 +26,39 @@ Throughout this book, we will learn each of this principle in-depth.
 * Strategies to keep track with changes: Because we have a large team of software engineers, there will be time of unexpected change. As we operate on a blame-free environment, we should work on the problem by assigning a group of people to work on fixing the problem in a timely manner. 
 * Trade-offs and Costs: We should decide which feature to build, keeping in mind the opportunity cost, technical cost, people cost. etc. 
 
+<h2 style="color:orange"> What is Software Engineering? Beyond just Programming </h2>
 
-## The Fuzzing Book 
+##### Summary
 
-#### Chapter 1: Introduction to Software Testing
+At its core, programming is about writing code-creating the algorthms and logic that make a software program work. On the other hand, softare engineering goes beyond coding, it covers the full life cycle of a software system, from idea to production and maintenance. 
+
+##### Three Critical Factors
+* Time Dimension: Engineers must not only create code but also maintain it over time. Therefore, the role of a software engineer extend the role of a programmer, looking beyond the immediate problems and solutions.
+* Scale and Growth: Software Engineering acknowledges the vast scales of modern applications and technology. The growth and scalability of software systems are integral considerations that go beyond the scope of only programming. 
+* Trade-offs: Engineers must weigh various factors and costs, such as financial, resource, engineering effort, and make informed decisions. 
+
+##### Implications for Individual Software Engineers
+We should recognize that software engineering entails more than just writing code and solving immediate problems. It involves the ongoing commitment to maintain, improve, and adapt the code over its lifespan.
+* Be ready to adapt: Being a software engineer means being prepared to respond to changes in product requirments and technology. 
+* Responsibility for Maintenance: Beyond initial program development, engineers should anticipate and embrace their role in maintaining code. They should actively look for problems in the program way before the maintainance phase to save time and cost in the future
+* Hyrum's Law: Be aware of unintended consequences of changes
+
+##### Implications for Chasten
+While Chasten may not be as extensive as some industrial system, it still benefits from these core principles:
+* Time & Change: Consider its potential for extended use within the Department of Computer and Information Science, software engineers should anticipate future maintenance and evolution needs.
+* Trade-offs: Balancing the deesire for features and complexity with the need for maintainability and time constraint is key, especially with Chasten, which will be implemented in approximately five weeks. 
+* Scalability: There are endless possibilities of how Chasten would be used and scaled. What if other departments or universities express interest? Designing the code and processes with scalability in mind can help you in the long run.
+
+##### Action Items
+* Documentation of code and issue
+* Testing and Quality Assurance
+* Version Control
+* Maintain open channels of communication within the team
+* Modular Design Practices to make it easier to modify the program without disrupting the entire system.
+
+# The Fuzzing Book 
+
+<h2 style="color:purple"> Introduction to Software Testing </h2>
 
 In the fast-paced world of software development, ensuring the functionality of your programs is immensely important. In this chapter, we'll delve into the fundamentals of software testing.
 
