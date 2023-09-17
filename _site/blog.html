@@ -123,8 +123,7 @@ Preface: Software Engineering Over Time
 <p>There are <strong><em>03 questions and priciples</em></strong> software engineers should keep in mind:</p>
 <ul>
 <li>Time and Change: How code will need to adapt over the length of its life</li>
-<li>Scale and Growth: How an organization will need to adap</li>
-<li>t as it evolves</li>
+<li>Scale and Growth: How an organization will need to adapt as it evolves</li>
 <li>Trade-offs and Costs: How an organization makes decisions, based on the lessons of Time and Change and Scale and Growth</li>
 </ul>
 <p>Throughout this book, we will learn each of this principle in-depth.</p>
@@ -193,10 +192,38 @@ Introduction to Software Testing
 </ul>
 </section>
 <section id="applications-on-chasten" class="level5">
-<h5 class="anchored" data-anchor-id="applications-on-chasten">Applications on Chasten</h5>
+<h5 class="anchored">Applications on Chasten</h5>
 <p>It’s a collaborative effort to ensure the software run correctly. After reading this chapter, here are some action items I suggest implementing: 1. Avoid overconfidence in your code and acknowledge that things can go wrong. 2. Rigorous Testing: To ensure the highest quality of your code, run as many tests as possible. 3. Collaborate and Seek Insights: Consult with Software Quality Assurance engineer and colleagues with diverse and creative perspectives.</p>
+<h2 style="color:purple" class="anchored" data-anchor-id="applications-on-chasten">
+Code Coverage
+</h2>
+<p>Code coverage is a vital aspect of software testing to provide valuable insights into the effectiveness of test cases and testing efforts.</p>
+</section>
+<section id="summary-of-code-coverage" class="level5">
+<h5 class="anchored" data-anchor-id="summary-of-code-coverage">Summary of Code Coverage</h5>
+<p><strong>Code coverage</strong> is a metric used in software testing to measure the extend to which a program’s source code is executed by a set of test cases. By tracking which lines of code, branches, and conditions have been executed, it quatifies the coverage of the codebase.</p>
+</section>
+<section id="list-of-testing-approaches" class="level5">
+<h5 class="anchored" data-anchor-id="list-of-testing-approaches">List of Testing Approaches</h5>
+<section id="coverage-class" class="level6">
+<h6 class="anchored" data-anchor-id="coverage-class">Coverage Class</h6>
+<p>The Coverage class allows you to measure and report code coverage using a variety of its method. + trace() Method: sets up code tracing by reporting data during test execution. + coverage() Method: reports coverage results, indicating which parts of your code were covered.</p>
+</section>
+<section id="testing-approaches" class="level6">
+<h6 class="anchored" data-anchor-id="testing-approaches">Testing Approaches</h6>
+<ul>
+<li>Black Box Testing: This approach focuses on evaluating the functionality of software application without knowledge of its internal code and structure. Testers design test cases based on specification and requirements. The primary goal of black box testing is to ensure that the software meets its intended functionality.</li>
+<li>White Box Testing: In contrast, white-box testing involves the knowledge of internal code structure and logic. The goal of this approach is to ensure code correctness, coverage and issues related to code structure.</li>
+<li>Tracing Execution using sys.settrace(): This function allows you to set a trace of function that performs automatically to give inforamtion about certain aspect. Common parameters are “frame”,“event”, and “argument”</li>
+<li>Fuzzing Test: a testing technique that involves generating a range of random input (could be customized to be mixed character and integer) to uncover defects.</li>
+</ul>
+</section>
+<section id="reflection" class="level6">
+<h6 class="anchored" data-anchor-id="reflection">Reflection</h6>
+<p>As a beginner in programming, I often found myself excited about solcing coding challenges and building software solutions. The satisfation to see my code work sometimes led me to being overconfident in the correctness of my work. After all, if the program executed without immediate errors, it must be fine, right? However, from time to time, I have been proven wrong as I began working on more complex projects. I started to realize that there was more to ensuring the quality and reliability of my code than just making it run. I discovered that power of “nothing as such as being too careful” with program execution and the invaluable role of code coverage. The logic I applied to solve immediate coding problems was crucial, but it was only part of the software development process. The early detection of issues helps me ensure the quality of the program.</p>
 
 
+</section>
 </section>
 </section>
 
