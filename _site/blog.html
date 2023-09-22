@@ -161,13 +161,36 @@ What is Software Engineering? Beyond just Programming
 <p>While Chasten may not be as extensive as some industrial system, it still benefits from these core principles: * Time &amp; Change: Consider its potential for extended use within the Department of Computer and Information Science, software engineers should anticipate future maintenance and evolution needs. * Trade-offs: Balancing the deesire for features and complexity with the need for maintainability and time constraint is key, especially with Chasten, which will be implemented in approximately five weeks. * Scalability: There are endless possibilities of how Chasten would be used and scaled. What if other departments or universities express interest? Designing the code and processes with scalability in mind can help you in the long run.</p>
 </section>
 <section id="action-items-1" class="level5">
-<h5 class="anchored" data-anchor-id="action-items-1">Action Items</h5>
+<h5 class="anchored">Action Items</h5>
 <ul>
 <li>Documentation of code and issue</li>
 <li>Testing and Quality Assurance</li>
 <li>Version Control</li>
 <li>Maintain open channels of communication within the team</li>
 <li>Modular Design Practices to make it easier to modify the program without disrupting the entire system.</li>
+</ul>
+<h2 style="color:orange" class="anchored" data-anchor-id="action-items-1">
+SE3: Software Engineering is a team endeavor!
+</h2>
+</section>
+<section id="summary-2" class="level5">
+<h5 class="anchored" data-anchor-id="summary-2">Summary</h5>
+<p>This chapter delves into the infrastructure of a software engineering team. It underscores the pivotal role of teamwork in achieving remarkable results and emphasizes the significance of self-awareness within the team.</p>
+</section>
+<section id="the-trade-offs-of-working-alone" class="level5">
+<h5 class="anchored" data-anchor-id="the-trade-offs-of-working-alone">The Trade-Offs of Working Alone</h5>
+<p>One of the challenges in software development is the temptation to work alone, sheltering codes and ideas until they’re perceived as perfect. However, this solitary approach has some trade-offs: * Longer Struggles * Delayed Error Detection</p>
+</section>
+<section id="the-collaborative-nirvana" class="level5">
+<h5 class="anchored" data-anchor-id="the-collaborative-nirvana">The Collaborative Nirvana</h5>
+<p>Dealing with social problems can be challenging and unpredictable.To unlock the full potential of teamwork, this chapter introduces three pillars of social interaction: * Humility: Embracing the fact that everyone has room for improvement paves the way for collective growth. <strong>Failure is an option</strong> * Respect: Acknowledges the value of each team member and encourages open dialogue and diverse perspectives * Trust: The belief that others are competent and will do the right thing</p>
+</section>
+<section id="action-items-2" class="level5">
+<h5 class="anchored" data-anchor-id="action-items-2">Action Items</h5>
+<ul>
+<li>Regular Team Meetings and Check-Ins</li>
+<li>Peer Mentoring and Knowledge Sharing</li>
+<li>Acknowledge the strength of each team member, celebrate success and learn from failures</li>
 </ul>
 </section>
 </section>
@@ -204,7 +227,7 @@ Code Coverage
 <p><strong>Code coverage</strong> is a metric used in software testing to measure the extend to which a program’s source code is executed by a set of test cases. By tracking which lines of code, branches, and conditions have been executed, it quatifies the coverage of the codebase.</p>
 </section>
 <section id="list-of-testing-approaches" class="level5">
-<h5 class="anchored" data-anchor-id="list-of-testing-approaches">List of Testing Approaches</h5>
+<h5 class="anchored">List of Testing Approaches</h5>
 <section id="coverage-class" class="level6">
 <h6 class="anchored" data-anchor-id="coverage-class">Coverage Class</h6>
 <p>The Coverage class allows you to measure and report code coverage using a variety of its method. + trace() Method: sets up code tracing by reporting data during test execution. + coverage() Method: reports coverage results, indicating which parts of your code were covered.</p>
@@ -219,8 +242,20 @@ Code Coverage
 </ul>
 </section>
 <section id="reflection" class="level6">
-<h6 class="anchored" data-anchor-id="reflection">Reflection</h6>
+<h6 class="anchored">Reflection</h6>
 <p>As a beginner in programming, I often found myself excited about solcing coding challenges and building software solutions. The satisfation to see my code work sometimes led me to being overconfident in the correctness of my work. After all, if the program executed without immediate errors, it must be fine, right? However, from time to time, I have been proven wrong as I began working on more complex projects. I started to realize that there was more to ensuring the quality and reliability of my code than just making it run. I discovered that power of “nothing as such as being too careful” with program execution and the invaluable role of code coverage. The logic I applied to solve immediate coding problems was crucial, but it was only part of the software development process. The early detection of issues helps me ensure the quality of the program.</p>
+<h2 style="color:purple" class="anchored" data-anchor-id="reflection">
+Fuzzing: Breaking Things in Random Input
+</h2>
+<p>Fuzzing is a testing technique that involves generating a range of random input to uncover defects.</p>
+<pre><code>import random
+def fuzzer(max_length: int=100, char_start: int = 32, char_range: int = 32) -&gt; str:
+    """A string of up to `max_length` characters in the range ['char_start','char_start'+ 'char_range']"""
+    string_length = random.randrange(0, max_length + 1)
+    out = ""
+    for i in range(0,string_length):
+        out += char(random.randrange(char_start,char_start+char_range))
+    return out</code></pre>
 
 
 </section>
