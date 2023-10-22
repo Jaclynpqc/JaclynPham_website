@@ -124,7 +124,7 @@ In the fast-paced world of software development, ensuring the functionality of y
 
 ##### What does Software Testing Mean?
 
-Sotware Testing is the process of evaluating a program to identify defects and issues. The purposes of software testing are:
+Software Testing is the process of evaluating a program to identify defects and issues. The purposes of software testing are:
 * Identifying and fixing bugs early in the process
 * Ensuring that the software meets the specified requirements, behaves as expected
 * Reducing the risk of software failures in deployment.
@@ -243,7 +243,7 @@ def insert_random_character(s: str) -> str:
     random_character = chr(random.randrange(32,127))
     return s[:pos] + random_character + s[pos:]
 
-def flip_random_characer(s:str) -> str:
+def flip_random_character(s:str) -> str:
     if s == "":
         return s
     pose = random.randint(0,len(s)-1)
