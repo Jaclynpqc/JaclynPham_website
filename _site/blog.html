@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="software-engineering-at-google" class="level1">
 <h1>Software Engineering at Google</h1>
 <h2 style="color:orange" class="anchored" data-anchor-id="software-engineering-at-google">
-Preface: Software Engineering Over Time
+Software Engineering @ Google 1: Software Engineering Over Time
 </h2>
 <section id="summary" class="level5">
 <h5 class="anchored" data-anchor-id="summary">Summary</h5>
@@ -137,7 +137,7 @@ Preface: Software Engineering Over Time
 <li>Trade-offs and Costs: We should decide which feature to build, keeping in mind the opportunity cost, technical cost, people cost. etc.</li>
 </ul>
 <h2 style="color:orange" class="anchored" data-anchor-id="action-items">
-What is Software Engineering? Beyond just Programming
+Software Engineering @ Google 2: What is Software Engineering? Beyond just Programming
 </h2>
 </section>
 <section id="summary-1" class="level5">
@@ -170,7 +170,7 @@ What is Software Engineering? Beyond just Programming
 <li>Modular Design Practices to make it easier to modify the program without disrupting the entire system.</li>
 </ul>
 <h2 style="color:orange" class="anchored" data-anchor-id="action-items-1">
-SE3: Software Engineering is a team endeavor!
+Software Engineering @ Google 3: Software Engineering is a team endeavor!
 </h2>
 </section>
 <section id="summary-2" class="level5">
@@ -193,7 +193,7 @@ SE3: Software Engineering is a team endeavor!
 <li>Acknowledge the strength of each team member, celebrate success and learn from failures</li>
 </ul>
 <h2 style="color:orange" class="anchored" data-anchor-id="action-items-2">
-SE4: Knowledge Sharing
+Software Engineering @ Google 4: Knowledge Sharing
 </h2>
 </section>
 <section id="summary-3" class="level5">
@@ -212,7 +212,7 @@ SE4: Knowledge Sharing
 <li>Continuous Feedback Loops</li>
 </ul>
 <h2 style="color:orange" class="anchored" data-anchor-id="action-items-3">
-SE5: Engineering for Equity
+Software Engineering @ Google 5: Engineering for Equity
 </h2>
 </section>
 <section id="summary-4" class="level5">
@@ -233,12 +233,12 @@ SE5: Engineering for Equity
 <section id="the-fuzzing-book" class="level1">
 <h1>The Fuzzing Book</h1>
 <h2 style="color:purple" class="anchored" data-anchor-id="the-fuzzing-book">
-Introduction to Software Testing
+Fuzzing Book 1: Introduction to Software Testing
 </h2>
 <p>In the fast-paced world of software development, ensuring the functionality of your programs is immensely important. In this chapter, we’ll delve into the fundamentals of software testing.</p>
 <section id="what-does-software-testing-mean" class="level5">
 <h5 class="anchored" data-anchor-id="what-does-software-testing-mean">What does Software Testing Mean?</h5>
-<p>Sotware Testing is the process of evaluating a program to identify defects and issues. The purposes of software testing are: * Identifying and fixing bugs early in the process * Ensuring that the software meets the specified requirements, behaves as expected * Reducing the risk of software failures in deployment.</p>
+<p>Software Testing is the process of evaluating a program to identify defects and issues. The purposes of software testing are: * Identifying and fixing bugs early in the process * Ensuring that the software meets the specified requirements, behaves as expected * Reducing the risk of software failures in deployment.</p>
 </section>
 <section id="testing-strategies" class="level5">
 <h5 class="anchored" data-anchor-id="testing-strategies">Testing Strategies</h5>
@@ -254,7 +254,7 @@ Introduction to Software Testing
 <h5 class="anchored">Applications on Chasten</h5>
 <p>It’s a collaborative effort to ensure the software run correctly. After reading this chapter, here are some action items I suggest implementing: 1. Avoid overconfidence in your code and acknowledge that things can go wrong. 2. Rigorous Testing: To ensure the highest quality of your code, run as many tests as possible. 3. Collaborate and Seek Insights: Consult with Software Quality Assurance engineer and colleagues with diverse and creative perspectives.</p>
 <h2 style="color:purple" class="anchored" data-anchor-id="applications-on-chasten">
-Code Coverage
+Fuzzing Book 2: Code Coverage
 </h2>
 <p>Code coverage is a vital aspect of software testing to provide valuable insights into the effectiveness of test cases and testing efforts.</p>
 </section>
@@ -281,7 +281,7 @@ Code Coverage
 <h6 class="anchored">Reflection</h6>
 <p>As a beginner in programming, I often found myself excited about solcing coding challenges and building software solutions. The satisfation to see my code work sometimes led me to being overconfident in the correctness of my work. After all, if the program executed without immediate errors, it must be fine, right? However, from time to time, I have been proven wrong as I began working on more complex projects. I started to realize that there was more to ensuring the quality and reliability of my code than just making it run. I discovered that power of “nothing as such as being too careful” with program execution and the invaluable role of code coverage. The logic I applied to solve immediate coding problems was crucial, but it was only part of the software development process. The early detection of issues helps me ensure the quality of the program.</p>
 <h2 style="color:purple" class="anchored" data-anchor-id="reflection-2">
-Fuzzing: Breaking Things in Random Input
+Fuzzing Book 3: Breaking Things in Random Input
 </h2>
 <p>Fuzzing is a testing technique that involves generating a range of random input to uncover defects.</p>
 </section>
@@ -303,8 +303,37 @@ def fuzzer(max_length: int=100, char_start: int = 32, char_range: int = 32) -&gt
 <p>Runner() is the component responsible for executing the target application with teh generated input. It captures the program’s behavisor, logs any crashes and indentifies potential vulnerabilities.</p>
 </section>
 <section id="fuzzing-external-programs" class="level6">
-<h6 class="anchored" data-anchor-id="fuzzing-external-programs">Fuzzing External Programs</h6>
+<h6 class="anchored">Fuzzing External Programs</h6>
 <p>Setting up fuzz testing for external programs allows for a comprehensive assessment of interconnected systems. This ensures that the program is thouroughly and rigorously tested, helping you uncover vulnerabilities that might go unnoticed.</p>
+<h2 style="color:purple" class="anchored" data-anchor-id="fuzzing-external-programs">
+Fuzzing Book 4: Mutation Analysis
+</h2>
+<p>Mutation analysis is a sophisticate technique, which injects artificial faults into the code and scrutinizes how test suites responds. Utilizing mutation analysis, developers gain invaluable insights into the efficacy of their tests. This blog post navigates the intricate world of mutation anlysis, revealing its principles, challenges, and real-world applications.</p>
+</section>
+<section id="benefits-of-mutation-analysis" class="level6">
+<h6 class="anchored" data-anchor-id="benefits-of-mutation-analysis">Benefits of Mutation Analysis</h6>
+<p><strong>Test Suit Effectiveness Assessment</strong> Mutation analysis evaluates the quality of the test suite by introducing artificial faults into the code. It helps developers understand how well your tests can detect these injected errors, providing insights into the thoroughness of your testing efforts Mutation analysis can be used as an indicator of test suit effectiveness. The more mutants killed by tests, the better the test suite. <strong>Identifying Weaknesses</strong> By pinpointing specific areas where your tests fail to catch mutations, mutation analysis highlights weaknesses in your code. This information is invaluable for strengthening your test cases and improving overall code quality.</p>
+</section>
+<section id="real-world-application-on-chasten-program" class="level6">
+<h6 class="anchored">Real-World Application on Chasten Program</h6>
+<p>In our Chasten project, mutation analysis could be applied by purposely injecting false XPath pattern to test the analyze feature’s ability to detect the bugs.</p>
+<h2 style="color:purple" class="anchored" data-anchor-id="real-world-application-on-chasten-program">
+Fuzzing Book 5: Mutation-Based Fuzzing
+</h2>
+<p>Mutation-based fuzzing is a software tesing technique used to discover vulnerabilities or bugs in programs, especially in softwrae that parses complex inputs. Fuzzing involves feedding a program with a large amount of randomly generated or mutated data to trigger unexpected behavior.</p>
+</section>
+<section id="the-process-of-mutation-based-fuzzing" class="level6">
+<h6 class="anchored" data-anchor-id="the-process-of-mutation-based-fuzzing">The process of mutation-based fuzzing</h6>
+<ol type="1">
+<li><strong>Input Generation</strong> - Fuzzer general initial inputs either randomly or from existing valid inputs. These inputs can be in various formats.</li>
+<li><strong>Mutation</strong> - Fuzzer mutates mutates the generated inputs to create new,slightly modified inputs. The idea is to explore different way the program approach the bugs to uncover potential vulnerabilities.</li>
+<li><strong>Input Execution</strong> -The mutated inputs are fed into the target program. The program’s behavior is monitored and analyzed.</li>
+<li><strong>Error Detection</strong> -If the program exibits abnormal behavior, the fuzzer detects these errors and logs the input that caused the issue</li>
+</ol>
+</section>
+<section id="application-on-chasten" class="level6">
+<h6 class="anchored" data-anchor-id="application-on-chasten">Application on Chasten</h6>
+<p>Mutation-based fuzzing can be applied to test a software tool that checks XPath expressions, like Chasten, by generating a variety of mutated XPath expressions and feeding them into the tool to uncover potential vulnerabilities. The mutated inputs can start with a set of valid XPath expressions taht the software tool should accept, and then be mutated through different ways, such as delete random character, insert random characters or flip random characters.</p>
 
 
 </section>

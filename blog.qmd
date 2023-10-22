@@ -115,6 +115,31 @@ This realization ties back to the core purpose of software engineering -to creat
 ##### Action Items for Chasten
 User Research: Comprehensively research users from diverse backgrounds will help us understand their unique needs, challenges, and expectations to inform the product development process
 
+<h2 style="color:orange"> Software Engineering @ Google 6: How to Lead a Team </h2>
+
+##### Summary
+In the chapter <How to Lead a Team>[https://abseil.io/resources/swe-book/html/ch05.html] from the book **Software Engineering at Google**, several positive patterns for successful leadership and management are discussed, alongside some negative patterns of being the manager. The chapter also highlights the distinct difference and responsbilities between a manager and tech lead (TL).
+
+To be a successful leading person, one should: 
+* Lose the Ego: Cultivate humility, trust and respect within the team
+* Be a Zen Master: Maintain calm and composure, especially during challenging situations
+* Be a Catalyst: Encourage collaboration and cooperation, removing roadblocks to ensure team's progress
+* Be a Teacher and a Mentor: Balance teaching with allowing team members to learn on their own
+* Set Clear Goals: Define a clear mission statement and goals for the team
+* Be Honest: Provide honest feedback, be kind and empathetic
+* Track Happiness: Regularly gauge your team members'happiness and well-being
+
+In contrast, there is a series of negative patterns to avoid as a leader: 
+* Hire Pushovers:  Hiring people who aren't as smart or ambitious as you are. Though it would cement your position as a team leader, productivity will crush the moment you leave the room. 
+* Ignore Low Performers
+* Ignore Human Issues
+* Be Everyone's Friend: Don't confuse friendship with leading with a soft touch
+* Compromise the Hiring Bar
+* Treat Your Team like Children
+
+##### Action Items for Chasten
+Applying these principles to Chasten, where rotational leader groups are implemented every week, can significantly enhance team dynamics and productivity. Setting clear goals during the sprint planning session is essential. Define the objectives, roles and responsibilities clearly to avoid confusion and promote a cohesive effort.
+
 
 # The Fuzzing Book 
 
