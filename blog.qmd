@@ -1,7 +1,7 @@
 
 # Software Engineering at Google
 
-<h2 style="color:orange"> Preface: Software Engineering Over Time </h2>
+<h2 style="color:orange"> Software Engineering @ Google 1: Software Engineering Over Time </h2>
 
 ##### Summary
 
@@ -25,7 +25,7 @@ Throughout this book, we will learn each of this principle in-depth.
 * Strategies to keep track with changes: Because we have a large team of software engineers, there will be time of unexpected change. As we operate on a blame-free environment, we should work on the problem by assigning a group of people to work on fixing the problem in a timely manner. 
 * Trade-offs and Costs: We should decide which feature to build, keeping in mind the opportunity cost, technical cost, people cost. etc. 
 
-<h2 style="color:orange"> What is Software Engineering? Beyond just Programming </h2>
+<h2 style="color:orange"> Software Engineering @ Google 2: What is Software Engineering? Beyond just Programming </h2>
 
 ##### Summary
 
@@ -55,7 +55,7 @@ While Chasten may not be as extensive as some industrial system, it still benefi
 * Maintain open channels of communication within the team
 * Modular Design Practices to make it easier to modify the program without disrupting the entire system.
 
-<h2 style="color:orange"> SE3: Software Engineering is a team endeavor! </h2>
+<h2 style="color:orange"> Software Engineering @ Google 3: Software Engineering is a team endeavor! </h2>
 
 ##### Summary
 
@@ -78,9 +78,47 @@ Dealing with social problems can be challenging and unpredictable.To unlock the 
 * Peer Mentoring and Knowledge Sharing
 * Acknowledge the strength of each team member, celebrate success and learn from failures
 
+<h2 style="color:orange"> Software Engineering @ Google 4: Knowledge Sharing </h2>
+
+##### Summary
+
+The chapter "Knowledge Sharing" from the book "Software Engineering at Google" illuminates the vital aspects of effective team communication and knowledge distribution within a software engienering environment. Central to the chapter is teh creation of a supportive work atmosphere where team members feel comfortable expressing ideas. making mistakes, and learnign collaboratively. It emphasizes the importance of dismantling infomration, addressing data fragmentation, and combating the fear of "haunted graveyard" code. The chapter stresses the significance of uniform knowledge distribution to prevent inconsistencies within the team, thus enhancing efficiency and preventing setbakcs caused by the sudden unavailability of key individuals.
+
+##### Reflection
+
+This chapter's highlights problem also relate to our challenge with team-work in Chaste. A significant challenge we face is the struggle to share vital information, and each software engineer lack connection with each other. This chapter's teaching us in real-world context, emphasizes the urgency of finding creative and proactive solutions to enhance out communication and collaboration.
+
+##### Action Items
+* Form Collaborative Teams: Our strength is communicating in small teams, hence we should form focused team and work collaboratively to solve each individual issues.
+* Establishing a centralized knowledge repository
+* Continuous Feedback Loops
+
+<h2 style="color:orange"> Software Engineering @ Google 5: Engineering for Equity </h2>
+
+##### Summary
+
+The chapter "Engineering for Equity" from the book "Software Engineering at Google" sheds light on the pervasive issues of unconscious bias in engineering. These biases often lead to the creation of products that cater to a specific group, leaving out diverse perspectives and needs. One striking example discussed is the development of tools ar AI training models that disadvantage people of color. The chapter emphasizes the importance of understanding how products can either advantage or disadvantage certain groups, highlightling the need for a comprehensive approach to tackle these multifaceted challenges.
+
+The chapter suggests several strategies to address these biases effectively. Here are some suggestions: 
+* Improve engineers knowledge of diversity
+* Making them aware of the biases 
+* Understanding the diverse needs of users
+* Rejecting singular approaches
+* Ensuring diverse representation at the management level. 
+
+##### Reflection
+
+In previous chapter, we explored the multifaceted role of a software engineer- as an individual, as a team player, as a learner. However, in this chaper, the spotlight shifts to the engineers as a catalyst for change in promoting diversity and inclusivity. The chapter encapsulates this role with a statement: "When engineering does not focus on users of different nationalities, ethnicities, races, genders, ages, socioeconomic statuses, abilities, and belief systems, even the most talented staff will inadvertently fail their users.". This statement underscore the essence of the software engineer's responsibility to craft products that resonate with the diverse tapestry of humanity. 
+
+This realization ties back to the core purpose of software engineering -to create impactful and useful product that enhance people's lives. It highlights that the essence of technology progress lies not only in innovation but also in empathy, understanding, and inclusion.
+
+##### Action Items for Chasten
+User Research: Comprehensively research users from diverse backgrounds will help us understand their unique needs, challenges, and expectations to inform the product development process
+
+
 # The Fuzzing Book 
 
-<h2 style="color:purple"> Introduction to Software Testing </h2>
+<h2 style="color:purple"> Fuzzing Book 1: Introduction to Software Testing </h2>
 
 In the fast-paced world of software development, ensuring the functionality of your programs is immensely important. In this chapter, we'll delve into the fundamentals of software testing.
 
@@ -106,7 +144,7 @@ It's a collaborative effort to ensure the software run correctly. After reading 
 2. Rigorous Testing: To ensure the highest quality of your code, run as many tests as possible. 
 3. Collaborate and Seek Insights: Consult with Software Quality Assurance engineer and colleagues with diverse and creative perspectives. 
 
-<h2 style="color:purple"> Code Coverage  </h2>
+<h2 style="color:purple"> Fuzzing Book 2: Code Coverage  </h2>
 
 Code coverage is a vital aspect of software testing to provide valuable insights into the effectiveness of test cases and testing efforts. 
 
@@ -132,7 +170,7 @@ As a beginner in programming, I often found myself excited about solcing coding 
 However, from time to time, I have been proven wrong as I began working on more complex projects. I started to realize that there was more to ensuring the quality and reliability of my code than just making it run. I discovered that power of "nothing as such as being too careful" with program execution and the invaluable role of code coverage. The logic I applied to solve immediate coding problems was crucial, but it was only part of the software development process. The early detection of issues helps me ensure the quality of the program.
 
 
-<h2 style="color:purple"> Fuzzing: Breaking Things in Random Input </h2>
+<h2 style="color:purple"> Fuzzing Book 3: Breaking Things in Random Input </h2>
 
 Fuzzing is a testing technique that involves generating a range of random input to uncover defects.
 
@@ -161,3 +199,56 @@ Runner() is the component responsible for executing the target application with 
 ###### Fuzzing External Programs
 Setting up fuzz testing for external programs allows for a comprehensive assessment of interconnected systems. This ensures that the program is thouroughly and rigorously tested, helping you uncover vulnerabilities that might go unnoticed.
 
+<h2 style="color:purple"> Fuzzing Book 4: Mutation Analysis </h2>
+
+Mutation analysis is a sophisticate technique, which injects artificial faults into the code and scrutinizes how test suites responds. Utilizing mutation analysis, developers gain invaluable insights into the efficacy of their tests. This blog post navigates the intricate world of mutation anlysis, revealing its principles, challenges, and real-world applications.
+
+###### Benefits of Mutation Analysis
+**Test Suit Effectiveness Assessment**
+Mutation analysis evaluates the quality of the test suite by introducing artificial faults into the code. It helps developers understand how well your tests can detect these injected errors, providing insights into the thoroughness of your testing efforts
+Mutation analysis can be used as an indicator of test suit effectiveness. The more mutants killed by tests, the better the test suite.
+**Identifying Weaknesses**
+By pinpointing specific areas where your tests fail to catch mutations, mutation analysis highlights weaknesses in your code. This information is invaluable for strengthening your test cases and improving overall code quality. 
+
+###### Real-World Application on Chasten Program
+In our Chasten project, mutation analysis could be applied by purposely injecting false XPath pattern to test the analyze feature's ability to detect the bugs. 
+
+<h2 style="color:purple"> Fuzzing Book 5: Mutation-Based Fuzzing </h2>
+Mutation-based fuzzing is a software tesing technique used to discover vulnerabilities or bugs in programs, especially in softwrae that parses complex inputs. Fuzzing involves feedding a program with a large amount of randomly generated or mutated data to trigger unexpected behavior. 
+
+###### The process of mutation-based fuzzing
+1. **Input Generation** - Fuzzer general initial inputs either randomly or from existing valid inputs. These inputs can be in various formats.
+2. **Mutation** - Fuzzer mutates mutates the generated inputs to create new,slightly modified inputs. The idea is to explore different way the program approach the bugs to uncover potential vulnerabilities.
+3. **Input Execution** -The mutated inputs are fed into the target program. The program's behavior is monitored and analyzed.
+4. **Error Detection** -If the program exibits abnormal behavior, the fuzzer detects these errors and logs the input that caused the issue
+
+###### Application on Chasten
+Mutation-based fuzzing can be applied to test a software tool that checks XPath expressions, like Chasten, by generating a variety of mutated XPath expressions and feeding them into the tool to uncover potential vulnerabilities.
+The mutated inputs can start with a set of valid XPath expressions taht the software tool should accept, and then be mutated through different ways, such as delete random character, insert random characters or flip random characters. 
+
+Here are the functions that mutate the input:
+```{python}
+import random
+from typing import Tuple, List, Callable, Set, Any
+from urllib.parse import urlparse
+
+def delete_random_character(s:str) -> str:
+    if s == "":
+        return s
+    pos = random.randint(o,len(s)-1)
+    return s[:pos] + s[pos + 1:]
+
+def insert_random_character(s: str) -> str:
+    pos = random.randit(0,len(s))
+    random_character = chr(random.randrange(32,127))
+    return s[:pos] + random_character + s[pos:]
+
+def flip_random_characer(s:str) -> str:
+    if s == "":
+        return s
+    pose = random.randint(0,len(s)-1)
+    c = s[pos]
+    bit = 1 << random.randint(0,6)
+    new_c = chr(ord(c)^ bit)
+    return s[:pos] + new_c + s[pos+1:]
+```
