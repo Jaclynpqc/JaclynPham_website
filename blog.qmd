@@ -225,30 +225,3 @@ Mutation-based fuzzing is a software tesing technique used to discover vulnerabi
 ###### Application on Chasten
 Mutation-based fuzzing can be applied to test a software tool that checks XPath expressions, like Chasten, by generating a variety of mutated XPath expressions and feeding them into the tool to uncover potential vulnerabilities.
 The mutated inputs can start with a set of valid XPath expressions taht the software tool should accept, and then be mutated through different ways, such as delete random character, insert random characters or flip random characters. 
-
-Here are the functions that mutate the input:
-```{python}
-import random
-from typing import Tuple, List, Callable, Set, Any
-from urllib.parse import urlparse
-
-def delete_random_character(s:str) -> str:
-    if s == "":
-        return s
-    pos = random.randint(o,len(s)-1)
-    return s[:pos] + s[pos + 1:]
-
-def insert_random_character(s: str) -> str:
-    pos = random.randit(0,len(s))
-    random_character = chr(random.randrange(32,127))
-    return s[:pos] + random_character + s[pos:]
-
-def flip_random_character(s:str) -> str:
-    if s == "":
-        return s
-    pose = random.randint(0,len(s)-1)
-    c = s[pos]
-    bit = 1 << random.randint(0,6)
-    new_c = chr(ord(c)^ bit)
-    return s[:pos] + new_c + s[pos+1:]
-```
