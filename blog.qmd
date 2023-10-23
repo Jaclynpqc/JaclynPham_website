@@ -270,14 +270,14 @@ class GrammarFuzzer(GrammarFuzzer):
             # print(self.possible_expansions(tree), "possible expansion(s) left")
 
     def expand_tree_with_strategy(self, tree: DerivationTree,
-                                  expand_node_method: Callable,
-                                  limit: Optional[int] = None):
+                            expand_node_method: Callable,
+                            limit: Optional[int] = None):
         """Expand tree using `expand_node_method` as node expansion function
         until the number of possible expansions reaches `limit`."""
         self.expand_node = expand_node_method  # type: ignore
         while ((limit is None
                 or self.possible_expansions(tree) < limit)
-               and self.any_possible_expansions(tree)):
+            and self.any_possible_expansions(tree)):
             tree = self.expand_tree_once(tree)
             self.log_tree(tree)
         return tree
