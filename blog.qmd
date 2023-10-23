@@ -250,3 +250,55 @@ Mutation-based fuzzing is a software tesing technique used to discover vulnerabi
 ###### Application on Chasten
 Mutation-based fuzzing can be applied to test a software tool that checks XPath expressions, like Chasten, by generating a variety of mutated XPath expressions and feeding them into the tool to uncover potential vulnerabilities.
 The mutated inputs can start with a set of valid XPath expressions taht the software tool should accept, and then be mutated through different ways, such as delete random character, insert random characters or flip random characters. 
+
+<h2 style="color:purple"> Fuzzing Book 6: Efficient Grammar Fuzzing </h2>
+This chaper presents the problem with traditional method of grammar fuzzer and propose a new solution to better control and increase efficiency in the code. 
+
+###### Limitaions of Simple Grammar Fuzzer
+`simple_grammar_fuzzer()` can be remarkably inefficient, especially when dealing with large grammars and complex language structures. These inefficiencies become apparent as the function has to iterate over teh generated string, searching for symbols ot expand. Additionally, controlling the output size is problematic, leading to the generation of excessively long strings even with limitations in place. 
+
+###### The Three-Phase Expansion Approach
+To address the limitation of conventional grammar fuzzing, a new approach has been developed, employing a three-phase expansion method encapsulated within a function called `expand_tree()`. Here's how it works:
+```{python}
+class GrammarFuzzer(GrammarFuzzer):
+    def log_tree(self, tree: DerivationTree) -> None:
+        """Output a tree if self.log is set; if self.display is also set, show the tree structure"""
+        if self.log:
+            print("Tree:", all_terminals(tree))
+            if self.disp:
+                display(display_tree(tree))
+            # print(self.possible_expansions(tree), "possible expansion(s) left")
+
+    def expand_tree_with_strategy(self, tree: DerivationTree,
+                                  expand_node_method: Callable,
+                                  limit: Optional[int] = None):
+        """Expand tree using `expand_node_method` as node expansion function
+        until the number of possible expansions reaches `limit`."""
+        self.expand_node = expand_node_method  # type: ignore
+        while ((limit is None
+                or self.possible_expansions(tree) < limit)
+               and self.any_possible_expansions(tree)):
+            tree = self.expand_tree_once(tree)
+            self.log_tree(tree)
+        return tree
+
+    def expand_tree(self, tree: DerivationTree) -> DerivationTree:
+        """Expand `tree` in a three-phase strategy until all expansions are complete."""
+        self.log_tree(tree)
+        tree = self.expand_tree_with_strategy(
+            tree, self.expand_node_max_cost, self.min_nonterminals)
+        tree = self.expand_tree_with_strategy(
+            tree, self.expand_node_randomly, self.max_nonterminals)
+        tree = self.expand_tree_with_strategy(
+            tree, self.expand_node_min_cost)
+
+        assert self.possible_expansions(tree) == 0
+
+        return tree
+```
+
+This approach significantly improves the efficiency of test generation. By organizing the expansion process into well-defined phases, the function efficiently controls the output size and enhances the speed of the test generation process. This method is able to produce smaller inputs, optimizing the testing process further. 
+
+###### Application on Chasten
+For a tool that checks XPATH expressions, applying the three-phase expansion approach would create a highly efficient testing tool. The expand_tree function can be customized to handle XPATH grammar, enabling the generation of diverse and complex XPATH expressions for testing. 
+By employing this strategy, the tool can quickly explore various parts of the grammar, ensuring comprehensive test coverage. This optimized testing approach not only improves the speed of test generatoin but also enhances the quality of the test cases produced, leading the more robust and reliable XPATH expression checking tools. 
