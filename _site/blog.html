@@ -226,8 +226,21 @@ Software Engineering @ Google 5: Engineering for Equity
 <p>This realization ties back to the core purpose of software engineering -to create impactful and useful product that enhance people’s lives. It highlights that the essence of technology progress lies not only in innovation but also in empathy, understanding, and inclusion.</p>
 </section>
 <section id="action-items-for-chasten" class="level5">
-<h5 class="anchored" data-anchor-id="action-items-for-chasten">Action Items for Chasten</h5>
+<h5 class="anchored">Action Items for Chasten</h5>
 <p>User Research: Comprehensively research users from diverse backgrounds will help us understand their unique needs, challenges, and expectations to inform the product development process</p>
+<h2 style="color:orange" class="anchored" data-anchor-id="action-items-for-chasten">
+Software Engineering @ Google 6: How to Lead a Team
+</h2>
+</section>
+<section id="summary-5" class="level5">
+<h5 class="anchored" data-anchor-id="summary-5">Summary</h5>
+<p>In the chapter <how to="" lead="" a="" team="">[https://abseil.io/resources/swe-book/html/ch05.html] from the book <strong>Software Engineering at Google</strong>, several positive patterns for successful leadership and management are discussed, alongside some negative patterns of being the manager. The chapter also highlights the distinct difference and responsbilities between a manager and tech lead (TL).</how></p>
+<p>To be a successful leading person, one should: * Lose the Ego: Cultivate humility, trust and respect within the team * Be a Zen Master: Maintain calm and composure, especially during challenging situations * Be a Catalyst: Encourage collaboration and cooperation, removing roadblocks to ensure team’s progress * Be a Teacher and a Mentor: Balance teaching with allowing team members to learn on their own * Set Clear Goals: Define a clear mission statement and goals for the team * Be Honest: Provide honest feedback, be kind and empathetic * Track Happiness: Regularly gauge your team members’happiness and well-being</p>
+<p>In contrast, there is a series of negative patterns to avoid as a leader: * Hire Pushovers: Hiring people who aren’t as smart or ambitious as you are. Though it would cement your position as a team leader, productivity will crush the moment you leave the room. * Ignore Low Performers * Ignore Human Issues * Be Everyone’s Friend: Don’t confuse friendship with leading with a soft touch * Compromise the Hiring Bar * Treat Your Team like Children</p>
+</section>
+<section id="action-items-for-chasten-1" class="level5">
+<h5 class="anchored" data-anchor-id="action-items-for-chasten-1">Action Items for Chasten</h5>
+<p>Applying these principles to Chasten, where rotational leader groups are implemented every week, can significantly enhance team dynamics and productivity. Setting clear goals during the sprint planning session is essential. Define the objectives, roles and responsibilities clearly to avoid confusion and promote a cohesive effort.</p>
 </section>
 </section>
 <section id="the-fuzzing-book" class="level1">
@@ -332,8 +345,25 @@ Fuzzing Book 5: Mutation-Based Fuzzing
 </ol>
 </section>
 <section id="application-on-chasten" class="level6">
-<h6 class="anchored" data-anchor-id="application-on-chasten">Application on Chasten</h6>
+<h6 class="anchored">Application on Chasten</h6>
 <p>Mutation-based fuzzing can be applied to test a software tool that checks XPath expressions, like Chasten, by generating a variety of mutated XPath expressions and feeding them into the tool to uncover potential vulnerabilities. The mutated inputs can start with a set of valid XPath expressions taht the software tool should accept, and then be mutated through different ways, such as delete random character, insert random characters or flip random characters.</p>
+<h2 style="color:purple" class="anchored" data-anchor-id="application-on-chasten">
+Fuzzing Book 6: Efficient Grammar Fuzzing
+</h2>
+<p>This chaper presents the problem with traditional method of grammar fuzzer and propose a new solution to better control and increase efficiency in the code.</p>
+</section>
+<section id="limitaions-of-simple-grammar-fuzzer" class="level6">
+<h6 class="anchored" data-anchor-id="limitaions-of-simple-grammar-fuzzer">Limitaions of Simple Grammar Fuzzer</h6>
+<p><code>simple_grammar_fuzzer()</code> can be remarkably inefficient, especially when dealing with large grammars and complex language structures. These inefficiencies become apparent as the function has to iterate over teh generated string, searching for symbols ot expand. Additionally, controlling the output size is problematic, leading to the generation of excessively long strings even with limitations in place.</p>
+</section>
+<section id="the-three-phase-expansion-approach" class="level6">
+<h6 class="anchored" data-anchor-id="the-three-phase-expansion-approach">The Three-Phase Expansion Approach</h6>
+<p>To address the limitation of conventional grammar fuzzing, a new approach has been developed, employing a three-phase expansion method encapsulated within a function called <code>expand_tree()</code>.</p>
+<p>This approach significantly improves the efficiency of test generation. By organizing the expansion process into well-defined phases, the function efficiently controls the output size and enhances the speed of the test generation process. This method is able to produce smaller inputs, optimizing the testing process further.</p>
+</section>
+<section id="application-on-chasten-1" class="level6">
+<h6 class="anchored" data-anchor-id="application-on-chasten-1">Application on Chasten</h6>
+<p>For a tool that checks XPATH expressions, applying the three-phase expansion approach would create a highly efficient testing tool. The expand_tree function can be customized to handle XPATH grammar, enabling the generation of diverse and complex XPATH expressions for testing. By employing this strategy, the tool can quickly explore various parts of the grammar, ensuring comprehensive test coverage. This optimized testing approach not only improves the speed of test generatoin but also enhances the quality of the test cases produced, leading the more robust and reliable XPATH expression checking tools.</p>
 
 
 </section>
