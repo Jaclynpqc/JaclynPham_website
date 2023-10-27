@@ -140,6 +140,23 @@ In contrast, there is a series of negative patterns to avoid as a leader:
 ##### Action Items for Chasten
 Applying these principles to Chasten, where rotational leader groups are implemented every week, can significantly enhance team dynamics and productivity. Setting clear goals during the sprint planning session is essential. Define the objectives, roles and responsibilities clearly to avoid confusion and promote a cohesive effort.
 
+<h2 style="color:orange"> Software Engineering @ Google 7: Leading at Scale </h2>
+
+##### Summary
+The chapter <Leading at Scale>[https://abseil.io/resources/swe-book/html/ch06.html] from the book **Software Engineering at Google** sheds light on the challenges on the leadership journey and provides invaluable insights into effective leading strategies. 
+
+##### Effective Leadership Strategies
+* Always Be Deciding: Prompt decision-making is crucial. Leaders should weight trade-offs, through immediate obvious or long-term. 
+* Always Be Leaving: Building an autonomous organization is key. Leaders must create a self-sustaining structure within their teams, enabling the gradual resolution of ambiguous problems without constance intervention, liberating leaders to focus on strategic tasks and providing opportunities for others to level up. 
+* Always Be Scaling: The bittersweet truth of successful leadership is that the team will take on more responsbilities and problems. At this point, the leader must manage the scalling effectively with their scarce resources of time, energy and attention.
+
+##### Reflection
+One of the profound insights from the chapter is that leadership is 95% about observation. Effective leaders keenly observe their teams, identify hidden issues and devise solutions to address these challenges.
+Additionally, the chapter also addresses the imposter syndrome, a common affliction among leaders, can be mitigated by adopting the mindset of temporarily substituting for an expect. By removing personal stakes, leaders can grant themselces the freedome to fail, leadn, and grow.
+
+##### Application on Chasten
+In our software engineer organixation, team memebrs often face new challenged that evoke fear of failure, especially if their evaluations are at stake. As a leader, addressing this freeze response is pivotal to nurturing a proactive and resilient team. 
+
 
 # The Fuzzing Book 
 
@@ -251,7 +268,9 @@ Mutation-based fuzzing is a software tesing technique used to discover vulnerabi
 Mutation-based fuzzing can be applied to test a software tool that checks XPath expressions, like Chasten, by generating a variety of mutated XPath expressions and feeding them into the tool to uncover potential vulnerabilities.
 The mutated inputs can start with a set of valid XPath expressions taht the software tool should accept, and then be mutated through different ways, such as delete random character, insert random characters or flip random characters. 
 
-<h2 style="color:purple"> Fuzzing Book 6: Efficient Grammar Fuzzing </h2>
+<h2 style="color:purple"> Fuzzing Book 6: Fuzzing with Grammar </h2>
+
+<h2 style="color:purple"> Fuzzing Book 7: Efficient Grammar Fuzzing </h2>
 This chaper presents the problem with traditional method of grammar fuzzer and propose a new solution to better control and increase efficiency in the code. 
 
 ###### Limitaions of Simple Grammar Fuzzer
