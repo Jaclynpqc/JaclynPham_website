@@ -118,7 +118,7 @@ User Research: Comprehensively research users from diverse backgrounds will help
 <h2 style="color:orange"> Software Engineering @ Google 6: How to Lead a Team </h2>
 
 ##### Summary
-In the chapter <How to Lead a Team>[https://abseil.io/resources/swe-book/html/ch05.html] from the book **Software Engineering at Google**, several positive patterns for successful leadership and management are discussed, alongside some negative patterns of being the manager. The chapter also highlights the distinct difference and responsbilities between a manager and tech lead (TL).
+In the chapter [How to Lead a Team]<https://abseil.io/resources/swe-book/html/ch05.html> from the book **Software Engineering at Google**, several positive patterns for successful leadership and management are discussed, alongside some negative patterns of being the manager. The chapter also highlights the distinct difference and responsbilities between a manager and tech lead (TL).
 
 To be a successful leading person, one should: 
 * Lose the Ego: Cultivate humility, trust and respect within the team
@@ -143,7 +143,7 @@ Applying these principles to Chasten, where rotational leader groups are impleme
 <h2 style="color:orange"> Software Engineering @ Google 7: Leading at Scale </h2>
 
 ##### Summary
-The chapter <Leading at Scale>[https://abseil.io/resources/swe-book/html/ch06.html] from the book **Software Engineering at Google** sheds light on the challenges on the leadership journey and provides invaluable insights into effective leading strategies. 
+The chapter [Leading at Scale]<https://abseil.io/resources/swe-book/html/ch06.html> from the book **Software Engineering at Google** sheds light on the challenges on the leadership journey and provides invaluable insights into effective leading strategies. 
 
 ##### Effective Leadership Strategies
 * Always Be Deciding: Prompt decision-making is crucial. Leaders should weight trade-offs, through immediate obvious or long-term. 
