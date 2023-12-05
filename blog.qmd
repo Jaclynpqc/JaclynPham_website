@@ -172,7 +172,65 @@ Some actionable items inspired by Google’s approach:
 Evaluate whether each rule contributes meaningfully to code clarity and maintainability
 Regularly review codebase for inconsistencies and address them proactively
 Integrate tools that analyze code for potential errors or vulnerabilities. 
- 
+
+<h2 style="color:orange"> Software Engineering @ Google 9: Code Review </h2>
+
+##### Summary
+Code review, as practiced at Google, is a collaborative and systematic endeavor where the benefits extend far beyond bug detection, This critical phase checks for correctness, ensures comprehensibility, enforces consistency, and fosters a culture of shared ownership and knowledge sharing. 
+
+The chapter also unfolds a set of best practices that serve as the guiding principles for effective code reviews. Politeness and professionalism stand out as foundational elements, emphasizing the importance of constructive communication that fosters a positive and collaborative atmosphere.
+
+In a typical code review process at Google, the sequence unfolds as follows: An individual initiates a modification to the codebase within their workspace. Subsequently, the author generates a snapshot of the modification, comprising a patch along with a corresponding description. The author has the option to utilize this initial patch for self-review or to apply automated review comments. Following this, the modified code is sent via email to one or more reviewers. The reviewers meticulously assess the code, offering comments on the differences observed. In response to this feedback, the author adjusts the modification, creating and uploading new snapshots. Concurrently, the author engages in a dialogue with the reviewers by replying to their comments. Once the reviewers express satisfaction with the latest iteration of the modification, they signify their approval by marking it as “looks good to me” (LGTM). Subsequently, upon achieving LGTM status, the author gains the authorization to commit the modification to the codebase. However, this final stpe is contingent upon the resolution of all comments and the formal approval of the change. 
+
+##### Reflection
+One notable aspect of Googld’s code review philosophy is the recognition that the process is not a one-size-fits-all solution. Different types of code reviews, from greenfield reviews to bug fixes and refactoring, require tailored approaches. The step-by-step breakdown of a typical code review at Googld offers valuable insights. From the initial creation of a snapship to the iterative feedback loop between authors and reviewers, the process is designed for thoroughness and collaboration, The final “Looks good to me” (LGTM) approval signifies not just the technical correctness but also an acknowledgement of the collaborative effort and consensus-ubilding inherent in the code review process.  
+
+##### Application on Chasten
+* Craft informative change description
+* Curate reviewer selection
+* Automate Repetitive tasks
+* Celebrate the “LGTM” Milestones.
+
+<h2 style="color:orange"> Software Engineering @ Google 10: Documentation </h2>
+
+##### Summary
+This chapter “Documentation”, deleves into the multifaceted nature of documentation, emphasizing its pivotal role in the success of engineering endeavors. 
+
+Documentation, as outlined, extends beyond standalone documentsl it ecncompasses the very fabric of code comments. The chapter stresses that quality documentation is not a mere formality but a linchpin that renders code and APIs comprehensible, reducing the likelihood of errors. Beyond this, it serves as a guiding beacon for project teams, providing clarity on design goals and team objectives. Manual processes become navigable when steps are clearly outlines, and onboarding new team members becomes an efficient process when supported by well-documented procedures. 
+
+##### Reflection
+The chapter advocates for treating documentation as code, intertwining it with the very essence of the development process. This involves establishing internal policies, placing documentation under source control, assigning clear ownership for maintenance, subjecting it to review processes for changes, tracking issues and periodically evaluating its effectiveness. 
+
+The main types of documents that software engineers are often tasked with include reference documentation (including code comments), design documents, tutorials, conceptual documentation, and landing pages. Each serves as unique purpose in the grand symphony of software development, contributing to the collaboration of engineers. 
+
+This chapter highlights the transformative impact of clear and comprehensive documentation on various facets of the development process. It underscores the notion that documentation is not an afterthought but an integral part of the development life cycle. Just as we write code, we must invest the same level and care into documenting it. 
+
+##### Application on Chasten
+* Implement Documentation as Code Practices
+* Ownership and Review Processes
+* Issue tracking and Evaluation
+* Audience-centric documentation
+* Diversify Documentation Types
+
+<h2 style="color:orange"> Software Engineering @ Google 11: Testing Overview </h2>
+
+##### Summary
+In the chapter “Testing Overview” fromthe book “Software Engineering at Google”, a compelling case is made for the pivotal role of automated testing in the software development life cycle. The chapter underscores the fundamental premise that bugs, if left unchecked, can escalate in cost exponentially the later they discovered in the development process. It introduces the concept that companies equipped with robust testing practices can not only prevent bugs from reaching users but also adapt swiftly to dynamic technological landscapes, market shifts, and customer preferences. 
+
+The chater highlights the profound benefits of testing code, emphasizing that it is not merely a box to check but a strategic investment. These benefits include minimizing debugging efforts, boosting confidence in making changes, enhancing documentation, streamlining code reviews, fostering thoughtful design, and ultimately leading to high-quality releases. 
+
+Furthermore, the chapter introduces the concept of code coverage, a metric measuring the proportion of feature code exercised by tests. It proposes that understanding and optimizing code coverage is essential for ensuring a thorough validation of the software, providing a quantitative measure of how much of the codebase is validated by the tests. 
+
+Beyond being a quality assurance checkpoint, testing emerges as a guardian against the ripple effects on bugs and a catalyst for embracing change in the software development process. The assertion that bugs become costlier to fiz as they traverse through the development cycle underscores the strategic importance of early and comprehensive testing. This aligns with the broader theme that companies capable of faster iteration possess a competitive edge in navigating the ever-evolving realms of technology, market dynamics, and user preferences. 
+
+##### Reflection
+In essence, the “Testing Overview” chapter invites us to view testing not merely as a technical practice but as a strategic pillar for navigating the complexities of software development. By integrating robust testing practices and embracing the ever-changing nature of the development landscape, teams can not only prevent bugs but also position themselves as agile and adaptive innovators in the dynamic world of technology. 
+
+##### Application on Chasten
+* Integrate Automated Testing into CI/CD Pipelines
+* Prioritize Early testing
+* Promote Code Coverage Monitoring
+
 
 # The Fuzzing Book 
 
