@@ -376,9 +376,15 @@ Fuzzing Book 6: Fuzzing with Grammar
 </section>
 <section id="summary-7" class="level6">
 <h6 class="anchored" data-anchor-id="summary-7">Summary</h6>
+<p>At its core, Fuzzing with Grammar is a testing technique that involves generating and manipulating inputs based on the grammar of a programming language or data format. Unlinke traditional fuzzing, which generataes random inputs, Basic Grammar Fuzzing leverages the syntactical structure of the input data. By adhering to the defined grammar rules, this method produces inputs that are not only syntactically valid but also semantically meaningful. The process begins by defining a grammar that represents the valid syntax of the target language or data format. The fuzzer then generates inputs by following the ruls outlines in the grammar. These inputs are mutated and fed into the software under test, aimimng to uncover vulnerabilities.</p>
+</section>
+<section id="reflection-4" class="level6">
+<h6 class="anchored" data-anchor-id="reflection-4">Reflection</h6>
+<p>Basic Grammar Fuzzing ensures that generated input adhere to the syntax of the target language or data format. This precision increases the likelihood of discovering vulnerabilities that are specific to the application’s expected input structure.</p>
 </section>
 <section id="application" class="level6">
 <h6 class="anchored">Application</h6>
+<p>Considering Chasten, applying Basic Grammar Fuzzing to the XPATH patterns might be a good idea to leverage the use of this technique. By applying Grammar fuzzing to the XPATH patters, we can include edge cases, nested queries, and unexpected combinations.</p>
 <h2 style="color:purple" class="anchored" data-anchor-id="application">
 Fuzzing Book 7: Efficient Grammar Fuzzing
 </h2>

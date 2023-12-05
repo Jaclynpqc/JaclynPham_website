@@ -157,6 +157,22 @@ Additionally, the chapter also addresses the imposter syndrome, a common afflict
 ##### Application on Chasten
 In our software engineer organixation, team memebrs often face new challenged that evoke fear of failure, especially if their evaluations are at stake. As a leader, addressing this freeze response is pivotal to nurturing a proactive and resilient team. 
 
+<h2 style="color:orange"> Software Engineering @ Google 8: Style Guides and Rules </h2>
+
+##### Summary
+The chapter on “Style Guides and Rules” in the book “Software Engineering at Google” provides a glimpse into the process of shaping the coding culture at Googld. By establishing rules that pull their weight, optimizing for the reader, ensuring consistency, avoiding pitfalls, and conceding the practicalities, Google paves the way for sustainable and innovative software development. 
+
+At its core, the chapter emphasizes the shared goal of style guides: directing code development towards sustainability. As an organization expanse, these established rules and guidelines become the cornerstone, shaping a common vocabulary that transcends individual coding preferences. One of the key tenets highlights in the chapter is the idea of rules “pulling their weight”. In essence, every rule and guideline should contribute meaningfully to the code’s clarity, readability, and maintainability, ensuring that the reader can effortlessly navigate through the logic and structure of the code. A consistent codebase is not only aesthetically pleasing, but also reduces cognitive load, makin git easier for developers to collaborate and maintain the code over time. 
+
+##### Reflection
+As I reflect on the principles outlines in the chapter, it becomes evident that the overarching goal is to foster an environment where code is not just functional but also a joy to work with . The commitment to rules that “pull their weight” speaks to the intentionality behind each guideline, ensuring that it adds tangible values to the development process. 
+
+##### Application on Chasten
+Some actionable items inspired by Google’s approach: 
+Evaluate whether each rule contributes meaningfully to code clarity and maintainability
+Regularly review codebase for inconsistencies and address them proactively
+Integrate tools that analyze code for potential errors or vulnerabilities. 
+ 
 
 # The Fuzzing Book 
 
