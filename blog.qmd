@@ -434,4 +434,13 @@ Tracing isn't just about capturing everything; it's about selective observation.
 
 <h2 style="color:blue"> Debugging Book 3: Statistical Debugging </h2>
 
+At its core, Statistical Debugging aims to establish a meaningful connection between program failures and specific segments of code. Unlike traditional debugging methods that focus on isolating errors in a deterministic manner, Statistical Debugging embraces the inherent variability in program executions. The process unfolds as follows:
 
+* Collector Class: A critical starting point is the Collector class, responsible for gathering information about each line's execution during program runs. The provided example introduces a basic Collector class from "The Debugging Book," showcasing its potential for customization.
+* Ranking Lines by Suspiciousness: After multiple program runs, the lines of code are ranked based on their suspiciousness. This metric is derived by analyzing which lines were executed during failing runs and comparing them to successful runs. The goal is to identify the lines most likely to cause program failures.
+* Code Coverage Tracking: Understanding what code is being executed is crucial for Statistical Debugging. The CoverageCollector subclass is introduced to track which lines of code are executed and returns a formatted set of tuples with function names and corresponding line numbers.
+* Grouping and Analysis: The collected information is then split based on the outcome (PASS or FAIL). StatisticalDebugger class exemplifies this process, organizing and analyzing the data using different collectors for passing and failing outcomes.
+
+The approach provides a unique perspective, acknowledging the variability in program executions and leveraging it to identify potential causes of failures. Statistical Debugging empowers developers to analyze a codebase over multiple runs, offering insights that prove especially valuable in large projects where efficiently identifying and resolving bugs is crucial.
+
+ As a development team, the decision to incorporate Statistical Debugging into the workflow would require careful consideration. Evaluating the benefits, especially in the context of tools like chasten and cellveyor, will be essential. While the initial implementation may involve a level of complexity, the long-term gains in understanding program behavior and resolving bugs efficiently could prove invaluable, particularly as the codebase continues to evolve and grow in complexity.
