@@ -378,6 +378,18 @@ This approach significantly improves the efficiency of test generation. By organ
 For a tool that checks XPATH expressions, applying the three-phase expansion approach would create a highly efficient testing tool. The expand_tree function can be customized to handle XPATH grammar, enabling the generation of diverse and complex XPATH expressions for testing. 
 By employing this strategy, the tool can quickly explore various parts of the grammar, ensuring comprehensive test coverage. This optimized testing approach not only improves the speed of test generatoin but also enhances the quality of the test cases produced, leading the more robust and reliable XPATH expression checking tools. 
 
+<h2 style="color:purple"> Fuzzing Book 8: Parcing Inputs </h2>
+
+The chapter “Parsing Inputs” in the book “The Fuzzing Book” delves into the topic of parsing inputs, employing grammars to dissect valid seed inputs into their corresponding derivation trees. This structural representation becomes the canvas for creating new, slightly altered inputs through mutation, crossover, and recombination. 
+
+A parser, as elucidated in this chapter, is the linchpin that processes structured input, transforming it into a derivation tree. From the user’s perspective, parsing involves two simple steps: initializaing the parser with a grammar and using the arser to obtain a list of derivation trees.  The chapter introduces two specific parsers-PEGParser and EarlyParser. 
+
+The PEGParser takes center stage in terms of fuzzing for generating strings. Its effectiveness stems from its inability to be re-interpreted as a CFG(Context-Free Grammar), makin git the preferred choice for parsing. On the other hand, the versatile EarlyParser can utilize any CFG to parse, providing possible derivation trees to resolve ambiguities. 
+
+To bring the knowledge from this chapter into the real world, by applying the principles of parsing inputs, we can use grammars to define the structure of valid XPATh queries. The PEGParser, with its efficacy in handling string generation, becomes a valuable asset in this scenario. We can initialize the parser with a grammar that captures the syntax rules of XPATH and use it to generate a list of derivation trees representing valid queries. 
+
+
+
 <h2 style="color:purple"> Fuzzing Book 9: Reducing Failure-inducing Inputs </h2>
 
 
@@ -421,3 +433,5 @@ The chapter demonstrates how tracing can be applied not only to functions but al
 Tracing isn't just about capturing everything; it's about selective observation. Conditional tracing, as showcased in the chapter, introduces a tracer that logs only when a specific conditional expression holds true. This feature enables developers to hone in on critical sections of code, reducing noise and providing a clearer picture of the program's execution.
 
 <h2 style="color:blue"> Debugging Book 3: Statistical Debugging </h2>
+
+
