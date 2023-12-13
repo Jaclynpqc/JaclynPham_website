@@ -231,6 +231,15 @@ In essence, the “Testing Overview” chapter invites us to view testing not me
 * Prioritize Early testing
 * Promote Code Coverage Monitoring
 
+<h2 style="color:orange"> Software Engineering @ Google 12: Unit Testing </h2>
+
+The chapter on “Unit Testing” in “Software Engineering at Google” sheds light on the significance of unit tests, their properties, and the overall approach Google taks to ensure effective testing. The key properties of unit tests highlighted include their small size, determinism, ease of wriing, and their ability to provide immediate feedback. Google recommends a balance of 80% unit tests and 20% broader-scoped tests. 
+
+Maintainability is a central focus for Google in testing. The chapter stresses the importance of tests that “just work” without constant attention, preventing unnecessary drains on productivity. Four fundamental types of changes are discussed concerning test stability: pure factoring, new features, bug fixes, and behavior changes. State testing, writing clear tests, completeness, and conciseness are identified as critical aspects of achieving maintainability. The chapter concludes with a call to test behaviors rather than methods and advocates for DAMP (Descriptive And Meaningful Phrases) tests over DRY(Don’t Repeat Yourself) ones. 
+
+Google’s approach to test classification, especially the 80/20 balance, reflects a nuanced understanding of testing strategies. The chapter’s insights into the four fundamental types of testing strategies. The chapter’s insights into the four types of changes and the importance of testing behaviors align with a proactive stance on preventing potential issues, thereby enhancing knowledge and predictability in the development process. 
+
+Teams and developers can adopt the 80/20 rule for a balanced testing strategy. Prioritizing unit tests for narrow scopes allows for quick feedback loops during development. This approach can significantly reduce the likelihood of bugs escaping into production, contributing to a more robust and reliable software product. 
 
 # The Fuzzing Book 
 
@@ -381,4 +390,15 @@ The chapter sheds light on the challenges associated with traditional fuzz testi
 ###### Application on Chasten
 For Chasten, the software specializing in analyzing Python code patterns using XPATH, we can apply some strategies derived from the chapter: 
 * Implement DeltaDebugging in Chasten: This can enhance Chasten’s ability to automatically identify and isolate errors in input data, providing a clearer understanding of failure sources
-* Explore Grammar-based input Reduction: Given the limitations of Delta Debugging, consider exploring the implementation of Grammar-based Input Reduction in Chasten. This more advanced strategy may offer a more efficient means of input reduction, particularly when dealing with syntactic constrains in Python code. 
+* Explore Grammar-based input Reduction: Given the limitations of Delta Debugging, consider exploring the implementation of Grammar-based Input Reduction in Chasten. This more advanced strategy may offer a more efficient means of input reduction, particularly when dealing with syntactic constrains in Python code.
+
+# The Debugging Book 
+
+<h2 style="color:blue"> Debugging Bookn 1: Introduction to Debugging </h2>
+
+Debugging is an integral part if a programmer's journey, akin to solving a complex puzzle. This chapter takesn us on a guided tour of debugging in then real world. 
+The chapter delves into a specific Python function tasked with removing HTML tags, uncovering a bug that disrupts its proper functioning. The debugging journey unfolds in a step-by-step fashion, illustrating the importance of clarity in diagnosis. The introduction of assertions as a debugging tool adds a layer of confidence in confirming hypotheses, as demonstrated through the meticulous testing of a quote-handling condition.
+The chapter candidly acknowledges the challenges inherent in debugging, ranging from the complexity of program states to the absence of clear specifications. Understanding defects, faults, and failures becomes a detective's quest, tracing the cause-and-effect chain to unearth the root cause. Debugging is not merely about fixing errors but about unraveling the narrative of how a bug came into existence.
+As software engineers, we glean valuable insights into the debugging process. The scientific method provides a structured approach, turning debugging into a methodical exploration rather than a haphazard pursuit. The cause-and-effect chain becomes a guiding principle for writing effective test cases, allowing us to anticipate and address potential pitfalls.
+
+Armed with the lessons from this chapter, we are empowered to approach debugging with a clear mindset. Creating hypotheses, predicting outcomes, and validating results align with the scientific method, transforming debugging from a daunting task into a strategic endeavor. The chapter serves as a roadmap, guiding developers to adopt a systematic methodology in their debugging endeavors.
