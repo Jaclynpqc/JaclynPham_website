@@ -394,7 +394,7 @@ For Chasten, the software specializing in analyzing Python code patterns using X
 
 # The Debugging Book 
 
-<h2 style="color:blue"> Debugging Bookn 1: Introduction to Debugging </h2>
+<h2 style="color:blue"> Debugging Book 1: Introduction to Debugging </h2>
 
 Debugging is an integral part if a programmer's journey, akin to solving a complex puzzle. This chapter takesn us on a guided tour of debugging in then real world. 
 The chapter delves into a specific Python function tasked with removing HTML tags, uncovering a bug that disrupts its proper functioning. The debugging journey unfolds in a step-by-step fashion, illustrating the importance of clarity in diagnosis. The introduction of assertions as a debugging tool adds a layer of confidence in confirming hypotheses, as demonstrated through the meticulous testing of a quote-handling condition.
@@ -402,3 +402,22 @@ The chapter candidly acknowledges the challenges inherent in debugging, ranging 
 As software engineers, we glean valuable insights into the debugging process. The scientific method provides a structured approach, turning debugging into a methodical exploration rather than a haphazard pursuit. The cause-and-effect chain becomes a guiding principle for writing effective test cases, allowing us to anticipate and address potential pitfalls.
 
 Armed with the lessons from this chapter, we are empowered to approach debugging with a clear mindset. Creating hypotheses, predicting outcomes, and validating results align with the scientific method, transforming debugging from a daunting task into a strategic endeavor. The chapter serves as a roadmap, guiding developers to adopt a systematic methodology in their debugging endeavors.
+
+<h2 style="color:blue"> Debugging Book 2: Tracing Executions</h2>
+
+At the heart of tracing lies the command sys.settrace(), a tool that opens a window into a program's execution without the need for an abundance of print statements. The frame argument becomes our guide, providing insights into the current line number, variables, and even the code itself. The frame works as a snapshot of the function, revealing:
+
+frame.f_lineno: The current line number
+frame.f_locals: The current variables as a Python dictionary
+frame.f_code: The current code as a Code object, complete with attributes like frame.f_code.co_name for the function's name
+
+```shell
+def traceit(frame: FrameType, event: str, arg: Any) -> Optional[Callable]:
+    print(event, frame.f_lineno, frame.f_code.co_name, frame.f_locals)
+    return traceit
+```
+
+The chapter demonstrates how tracing can be applied not only to functions but also to entire classes. By utilizing the with command, tracing becomes a scoped operation, capturing events only within the indented block. This flexibility enhances the efficiency of the debugging process, allowing developers to focus on specific sections of code.
+Tracing isn't just about capturing everything; it's about selective observation. Conditional tracing, as showcased in the chapter, introduces a tracer that logs only when a specific conditional expression holds true. This feature enables developers to hone in on critical sections of code, reducing noise and providing a clearer picture of the program's execution.
+
+<h2 style="color:blue"> Debugging Book 3: Statistical Debugging </h2>
